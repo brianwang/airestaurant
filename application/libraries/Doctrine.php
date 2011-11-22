@@ -8,7 +8,6 @@ class CI_Doctrine
     public function __construct()
     {
         // include our CodeIgniter application's database configuration
-        //echo dirname(__FILE__).'\\..\\'.'config\\database.php';
         require dirname(__FILE__).'/../'.'config/database.php';
         //require "E:/www/ai/codeIgniterTestProject/application/config/database.php";
         
