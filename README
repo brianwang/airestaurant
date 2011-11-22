@@ -1,0 +1,32 @@
+The system is multi-role, functions based system.
+page is view for user
+login page => admin page
+	   => normal user page
+           => employee page
+           => manager page
+           => guest page
+guest(view menu, order, material, user, dishes, cooking)
+normal employee: guest( edit queue, edit material, edit dishes, edit order)
+manager: guest( edit order, edit material, edit accounting, edit dishes, edit waiting queue)
+admin have all functions and have one more function(componente management)
+
+component managemment
+1. user management (view, add ,edit, remove)
+2. menu management (view, add ,edit, remove)
+3. order management (view, add ,edit, remove)
+4. material managmeent (view, add ,edit, remove)
+5. accounting managment (view, add ,edit, remove)
+6. dishes managmeent (view, add ,edit, remove)
+7. waiting queue management (view, add ,edit, remove)
+8. cooking process management (view, add ,edit, remove)
+				
+add,edit,remove,view are restful functions.
+
+1.0 version:
+1. database based on mysql and structured.
+2. create all functions and models.
+3. create views for all roles.
+4.
+
+1. database based on doctrine.doctrine will create a metadatabase and generate models.
+2. create all fucntions restful function.
