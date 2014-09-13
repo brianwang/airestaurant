@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://code.local/';
+$config['base_url']	= 'http://www.airest.com:8080/';
 
 /*
 |--------------------------------------------------------------------------
@@ -358,6 +358,6 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
-
+$config['sitename'] ='美食网';
 /* End of file config.php */
 /* Location: ./application/config/config.php */

@@ -1,7 +1,9 @@
 <?php
 
 // trailing slash is important!
-require APPPATH.'libraries/Doctrine.php';
+define('APPPATH', __DIR__);
+
+require APPPATH.'/libraries/Doctrine.php';
 
 $doctrine = new Doctrine();
  
