@@ -40,6 +40,15 @@ class rest_model extends MY_Model {
         $this->db->insert_batch('rest_imgs', $tmp);
     }
 
+    function getByUid($uid = '') {
+        $result = array();
+        if ($uid != '') {
+            $query = $this->db->get_where('restaurant', array('owner_id' => $uid));
+            $result = $query->result_array();
+        }
+        return $result;
+    }
+
 }
 
 ?>

@@ -1886,7 +1886,7 @@ a:hover {
     margin-left: 10px
 }
 
-.container,.navbar-fixed-top .container,.navbar-fixed-bottom .container {
+.navbar-fixed-top .container,.navbar-fixed-bottom .container {
     width: 950px
 }
 
@@ -2067,11 +2067,7 @@ a:hover {
     width: 6.382978723%
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    *zoom: 1
-}
+
 
 .container:before,.container:after {
     display: table;
@@ -5705,14 +5701,16 @@ span.ui-alert {
 .caret {
     content: "";
     display: inline-block;
-    width: 0;
-    height: 0;
     vertical-align: top;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid #666
 }
 
+.middle{
+    width: 980px;
+    margin: 0 auto;
+}
 .eleme_dropdown {
     position: relative
 }
@@ -10986,7 +10984,9 @@ body {
 #topbar .container {
     background-color: #222;
     background-image: -webkit-linear-gradient(270deg,#262626,#1a1a1a);
-    background-image: linear-gradient(180deg,#262626,#1a1a1a)
+    background-image: linear-gradient(180deg,#262626,#1a1a1a);
+    margin: 0 auto;
+    width: 965px;
 }
 
 #topbar a {

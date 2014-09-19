@@ -39,6 +39,6 @@ function is_ajax(){
     return $_SERVER['REQUEST_METHOD']=="POST"; 
 }
 function redirect_back(){
-    
+    header("location:".$_SERVER['HTTP_REFERER']);
     
 }

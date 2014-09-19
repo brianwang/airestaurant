@@ -29,7 +29,7 @@ class MY_Model extends CI_Model {
         }
     }
 
-    public function edit($data, $key) {
+    public function update($data, $key) {
         if ($data != NULL && $key != NULL && is_numeric($key)) {
             $this->db->where(array('id' => $key))->update($this->table, $data);
         } else {
@@ -61,9 +61,8 @@ class MY_Model extends CI_Model {
     }
 
     //获得某个
-    public function getItem($id) {
-        $query = $this->db->where($this->table, array('id' => $id))->get();
-
+    public function get($id) {
+        $query = $this->db->where(array('id' => $id))->get($this->table);
         return $query->result_array();
     }
 

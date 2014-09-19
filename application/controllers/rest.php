@@ -12,7 +12,6 @@
  * @author Administrator
  */
 class Rest extends MY_Controller {
-
     //put your code here
     public function create() {
         if ($this->form_validation->run('rest')) {
@@ -38,7 +37,7 @@ class Rest extends MY_Controller {
             show_404();
         }
         $rest = $this->rest_model->get($restid);
-        $this->smarty->view('rest.tpl', $rest);
+        $this->smarty->view('rest/profile.tpl', $rest);
     }
 
     public function uploadimg($restid = '') {

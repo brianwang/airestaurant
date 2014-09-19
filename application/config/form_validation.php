@@ -43,4 +43,39 @@ $config = array(
             'rules' => 'required'
         ),
     ),
+    'menu' => array(
+        array(
+            'field' => 'name',
+            'label' => '菜单名称',
+            'rules' => 'required'
+        ),
+        array(
+            'field' => 'rest_id',
+            'label' => '自己的餐馆',
+            'rules' => 'required'
+        ),
+    ),
+    //菜单上的内容
+    'item' => array(
+        array(
+            'field' => 'name',
+            'label' => '菜品名称',
+            'rules' => 'required'
+        ),
+        array(
+            'field' => 'rest_id',
+            'label' => '自己的餐馆',
+            'rules' => 'required'
+        ),
+        array(
+            'field' => 'menu_id',
+            'label' => '菜单名称',
+            'rules' => 'required'
+        ),
+        array(
+            'field' => 'value',
+            'label' => '价格',
+            'rules' => 'required'
+        )
+    )
 );
